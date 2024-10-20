@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <img src="./assets/turtle.png" height="500" width="1000" ra/>
+    <LogoView/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LogoView from './components/LogoView.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LogoView
   }
 }
 </script>
@@ -20,7 +22,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+  height: 100%;
+  width: 100%;
 }
 </style>
